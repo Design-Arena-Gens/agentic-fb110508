@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iran GeoJSON</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-sA+Sk1jfcP+bUGuIhC9Fck0rtlroVAt4io9cJ1rMJ74="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Iran GeoJSON</h1>
+      <p>Interactive map rendering the precise national boundary of Iran.</p>
+    </header>
+    <main>
+      <section id="map"></section>
+      <aside>
+        <h2>Dataset Details</h2>
+        <ul>
+          <li><strong>Source:</strong> Johan World GeoJSON dataset</li>
+          <li><strong>Format:</strong> GeoJSON FeatureCollection</li>
+          <li><strong>CRS:</strong> WGS84 (EPSG:4326)</li>
+          <li>
+            <strong>Usage:</strong>
+            <a href="iran.geojson" download>Download GeoJSON</a>
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <footer>
+      <small>Rendered with Leaflet on Web Mercator tiles.</small>
+    </footer>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-o9N1j7kB4edJzN+6raU3JpQ8R1pzdv73G3jR2PmmwY0="
+      crossorigin=""
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

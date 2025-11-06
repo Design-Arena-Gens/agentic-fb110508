@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+header {
+  padding: 2rem 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #38bdf8;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1.5rem 2rem;
+}
+
+#map {
+  width: 100%;
+  height: 70vh;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.6);
+}
+
+aside {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.45);
+}
+
+aside h2 {
+  margin-top: 0;
+  color: #facc15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+aside li strong {
+  color: #38bdf8;
+}
+
+aside a {
+  color: #f472b6;
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 1.5rem 2.5rem;
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.error-banner {
+  background: #dc2626;
+  color: #f8fafc;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+
+@media (min-width: 960px) {
+  main {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #map {
+    flex: 3;
+    height: 80vh;
+  }
+
+  aside {
+    flex: 1;
+    position: sticky;
+    top: 1.5rem;
+  }
+}
+
+.leaflet-control-attribution {
+  background: rgba(15, 23, 42, 0.8);
+  color: #cbd5f5;
+}
+
+.leaflet-control-attribution a {
+  color: #f472b6;
+}
